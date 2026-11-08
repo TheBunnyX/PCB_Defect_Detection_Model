@@ -1,0 +1,8 @@
+.venv/
+.runtime/
+*.cache
+Dataset/**/*.npy
+Dataset/train/
+Dataset/valid/
+Dataset/test/
+__pycache__/

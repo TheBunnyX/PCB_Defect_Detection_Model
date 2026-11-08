@@ -1,0 +1,175 @@
+{
+  "status": "paused",
+  "completed_epochs": 43,
+  "planned_epochs": 100,
+  "early_stopping_patience": 25,
+  "metrics_split": "validation",
+  "test_evaluated": false,
+  "best_epoch": 41,
+  "best_checkpoint_epoch": 41,
+  "best_metrics": {
+    "metrics/precision(B)": 0.98107,
+    "metrics/recall(B)": 0.98595,
+    "metrics/mAP50(B)": 0.99064,
+    "metrics/mAP50-95(B)": 0.57485
+  },
+  "latest_metrics": {
+    "metrics/precision(B)": 0.97679,
+    "metrics/recall(B)": 0.9897,
+    "metrics/mAP50(B)": 0.99144,
+    "metrics/mAP50-95(B)": 0.5743
+  },
+  "weights_sha256": "e1aad1eedd8d082e7281292c5e206d9ad10c86571729afc256df20afdb5a942b",
+  "demo": {
+    "split": "validation",
+    "confidence_threshold": 0.25,
+    "image_size": 640,
+    "selection": "First distinct image in sorted validation labels for each class; no confidence-based selection",
+    "examples": [
+      {
+        "class_example": "missing_hole",
+        "source": "Dataset/valid/images/l_light_01_missing_hole_03_1_600_jpg.rf.76ce900f938f7ab6685b3187b8e10d49.jpg",
+        "ground_truth_box_count": 2,
+        "predictions": [
+          {
+            "class": "missing_hole",
+            "confidence": 0.7744140625,
+            "xyxy": [
+              0.2636718451976776,
+              360.9374694824219,
+              37.324214935302734,
+              394.6874694824219
+            ]
+          },
+          {
+            "class": "missing_hole",
+            "confidence": 0.7607421875,
+            "xyxy": [
+              353.4374694824219,
+              299.0624694824219,
+              389.9999694824219,
+              336.0937194824219
+            ]
+          }
+        ]
+      },
+      {
+        "class_example": "mouse_bite",
+        "source": "Dataset/valid/images/l_light_01_mouse_bite_03_1_600_jpg.rf.365e5623e09522fea7c9e4bcd8a597c1.jpg",
+        "ground_truth_box_count": 3,
+        "predictions": [
+          {
+            "class": "mouse_bite",
+            "confidence": 0.66796875,
+            "xyxy": [
+              142.49998474121094,
+              473.9062194824219,
+              164.06248474121094,
+              491.7187194824219
+            ]
+          },
+          {
+            "class": "mouse_bite",
+            "confidence": 0.65771484375,
+            "xyxy": [
+              407.8124694824219,
+              204.02342224121094,
+              427.4999694824219,
+              221.83592224121094
+            ]
+          }
+        ]
+      },
+      {
+        "class_example": "open_circuit",
+        "source": "Dataset/valid/images/l_light_01_open_circuit_09_2_600_jpg.rf.773e7324e68f22c33cb75668516542f8.jpg",
+        "ground_truth_box_count": 1,
+        "predictions": [
+          {
+            "class": "open_circuit",
+            "confidence": 0.65478515625,
+            "xyxy": [
+              253.59373474121094,
+              181.87498474121094,
+              273.2812194824219,
+              201.56248474121094
+            ]
+          }
+        ]
+      },
+      {
+        "class_example": "short",
+        "source": "Dataset/valid/images/l_light_01_short_09_2_600_jpg.rf.f29fe25cf2b2c0805473ae8b1432b2c2.jpg",
+        "ground_truth_box_count": 4,
+        "predictions": [
+          {
+            "class": "short",
+            "confidence": 0.732421875,
+            "xyxy": [
+              372.1874694824219,
+              174.72654724121094,
+              405.9374694824219,
+              207.53904724121094
+            ]
+          },
+          {
+            "class": "short",
+            "confidence": 0.72509765625,
+            "xyxy": [
+              509.5312194824219,
+              465.4687194824219,
+              542.3436889648438,
+              499.2187194824219
+            ]
+          },
+          {
+            "class": "short",
+            "confidence": 0.71533203125,
+            "xyxy": [
+              311.0155944824219,
+              192.42185974121094,
+              345.7030944824219,
+              226.64060974121094
+            ]
+          }
+        ]
+      },
+      {
+        "class_example": "spur",
+        "source": "Dataset/valid/images/l_light_01_spur_05_3_600_jpg.rf.5e104da94013137edff28469dc21cf4d.jpg",
+        "ground_truth_box_count": 1,
+        "predictions": [
+          {
+            "class": "spur",
+            "confidence": 0.64794921875,
+            "xyxy": [
+              551.2499389648438,
+              314.9999694824219,
+              577.4999389648438,
+              335.6249694824219
+            ]
+          }
+        ]
+      },
+      {
+        "class_example": "spurious_copper",
+        "source": "Dataset/valid/images/l_light_04_spurious_copper_03_2_600_jpg.rf.a6b693d6a470168f4e1e0b5e71c5db97.jpg",
+        "ground_truth_box_count": 1,
+        "predictions": [
+          {
+            "class": "spurious_copper",
+            "confidence": 0.67919921875,
+            "xyxy": [
+              86.01561737060547,
+              57.128902435302734,
+              134.64842224121094,
+              70.48827362060547
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "dataset_source": "https://universe.roboflow.com/tcc-r4j2r/pcb-la0tj/dataset/2",
+  "image_license": "CC BY 4.0; TCC / Roboflow; prediction overlays and layout added"
+}

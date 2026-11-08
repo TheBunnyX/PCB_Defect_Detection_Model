@@ -1,0 +1,130 @@
+{
+  "measurement": "20 training batches after 5 warmup batches; excludes setup and validation; single-run comparisons",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070",
+    "vram_gb": 11.913818359375,
+    "compute_capability": [
+      12,
+      0
+    ],
+    "torch": "2.9.1+cu128",
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "sm_120_in_build": true
+  },
+  "results": [
+    {
+      "requested_batch": 16,
+      "batch": 16,
+      "workers": 2,
+      "cache": "disk",
+      "warmup_batches": 5,
+      "measured_batches": 20,
+      "seconds": 2.5851300000067567,
+      "images_per_second": 123.78487735594095,
+      "peak_cuda_allocated_gb": 4.279288291931152,
+      "peak_cuda_reserved_gb": 4.736328125,
+      "available_ram_gb": 12.16617202758789,
+      "channels_last": false,
+      "tf32": false
+    },
+    {
+      "requested_batch": 32,
+      "batch": 32,
+      "workers": 2,
+      "cache": "disk",
+      "warmup_batches": 5,
+      "measured_batches": 20,
+      "seconds": 3.9623243999958504,
+      "images_per_second": 161.52135347642667,
+      "peak_cuda_allocated_gb": 8.321411609649658,
+      "peak_cuda_reserved_gb": 9.21875,
+      "available_ram_gb": 11.285835266113281,
+      "channels_last": false,
+      "tf32": false
+    },
+    {
+      "requested_batch": 32,
+      "batch": 32,
+      "channels_last": true,
+      "tf32": true,
+      "workers": 2,
+      "cache": "disk",
+      "warmup_batches": 5,
+      "measured_batches": 20,
+      "seconds": 20.423288100006175,
+      "images_per_second": 31.336775785864102,
+      "peak_cuda_allocated_gb": 8.323423862457275,
+      "peak_cuda_reserved_gb": 9.189453125,
+      "available_ram_gb": 12.656440734863281
+    },
+    {
+      "requested_batch": 32,
+      "batch": 32,
+      "channels_last": false,
+      "tf32": true,
+      "workers": 2,
+      "cache": "disk",
+      "warmup_batches": 5,
+      "measured_batches": 20,
+      "seconds": 3.976279800001066,
+      "images_per_second": 160.95446804317655,
+      "peak_cuda_allocated_gb": 8.325117588043213,
+      "peak_cuda_reserved_gb": 9.1953125,
+      "available_ram_gb": 12.414710998535156
+    },
+    {
+      "requested_batch": 32,
+      "batch": 32,
+      "workers": 4,
+      "cache": "disk",
+      "warmup_batches": 5,
+      "measured_batches": 20,
+      "seconds": 4.0468664999934845,
+      "images_per_second": 158.14705031683906,
+      "peak_cuda_allocated_gb": 8.320255279541016,
+      "peak_cuda_reserved_gb": 9.203125,
+      "available_ram_gb": 8.819683074951172,
+      "channels_last": false,
+      "tf32": false
+    },
+    {
+      "requested_batch": 8,
+      "batch": 8,
+      "workers": 2,
+      "cache": "disk",
+      "warmup_batches": 5,
+      "measured_batches": 20,
+      "seconds": 2.602671000000555,
+      "images_per_second": 61.47530748218499,
+      "peak_cuda_allocated_gb": 2.2211995124816895,
+      "peak_cuda_reserved_gb": 2.419921875,
+      "available_ram_gb": 12.643192291259766,
+      "channels_last": false,
+      "tf32": false
+    }
+  ],
+  "selected": {
+    "requested_batch": 32,
+    "batch": 32,
+    "workers": 2,
+    "cache": "disk",
+    "warmup_batches": 5,
+    "measured_batches": 20,
+    "seconds": 3.9623243999958504,
+    "images_per_second": 161.52135347642667,
+    "peak_cuda_allocated_gb": 8.321411609649658,
+    "peak_cuda_reserved_gb": 9.21875,
+    "available_ram_gb": 11.285835266113281,
+    "channels_last": false,
+    "tf32": false
+  },
+  "full_epoch_measurement": {
+    "before_seconds": 93.667,
+    "after_seconds": 45.644,
+    "speedup": 2.0521207606695295,
+    "note": "Compared baseline epoch 2 and optimized epoch 4; excludes initial autotuning epoch"
+  },
+  "profile": "rtx5070",
+  "selection_note": "TF32 difference was less than 1%; retained highest FP32 matmul precision. NHWC was substantially slower on this Windows machine."
+}

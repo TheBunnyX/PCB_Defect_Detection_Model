@@ -1,0 +1,14 @@
+path: Dataset
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 6
+names: ['missing_hole', 'mouse_bite', 'open_circuit', 'short', 'spur', 'spurious_copper']
+
+roboflow:
+  workspace: tcc-r4j2r
+  project: pcb-la0tj
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/tcc-r4j2r/pcb-la0tj/dataset/2

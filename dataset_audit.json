@@ -1,0 +1,47 @@
+{
+  "splits": {
+    "train": {
+      "images": 6346,
+      "empty_labels": 0,
+      "boxes": {
+        "missing_hole": 2197,
+        "mouse_bite": 2221,
+        "open_circuit": 2135,
+        "short": 2004,
+        "spur": 2186,
+        "spurious_copper": 2221
+      }
+    },
+    "valid": {
+      "images": 798,
+      "empty_labels": 0,
+      "boxes": {
+        "missing_hole": 229,
+        "mouse_bite": 280,
+        "open_circuit": 255,
+        "short": 324,
+        "spur": 262,
+        "spurious_copper": 238
+      }
+    },
+    "test": {
+      "images": 827,
+      "empty_labels": 0,
+      "boxes": {
+        "missing_hole": 283,
+        "mouse_bite": 262,
+        "open_circuit": 265,
+        "short": 273,
+        "spur": 279,
+        "spurious_copper": 298
+      }
+    }
+  },
+  "errors": [],
+  "cross_split_duplicates": [],
+  "potential_shared_sources_by_filename": {
+    "train/valid": 693,
+    "train/test": 712,
+    "valid/test": 162
+  }
+}
